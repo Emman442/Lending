@@ -8,7 +8,10 @@ pub enum ErrorCode{
     
     #[msg("Over Borrowable Amount!")]
     OverBorrowableAmount,
-    
+
     #[msg("Repay Amount Exceeds Borrowed amount!")]
     OverRepay,
+
+    #[msg("User Is not under collateralized!, Can't be liquidated")]
+    NotUnderCollateralized,
 }
